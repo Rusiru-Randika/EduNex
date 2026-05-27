@@ -14,26 +14,8 @@ namespace EduNex
             this.Text = "EduNex - Smart Class Management System - Login";
             this.StartPosition = FormStartPosition.CenterScreen;
 
-            // Initialize sample teacher data
-            InitializeSampleData();
-        }
-
-        private void InitializeSampleData()
-        {
-            // Add sample teacher for testing
-            var teacher = new Models.Teacher
-            {
-                TeacherID = 1,
-                Name = "Mr. John Doe",
-                Email = "john@example.com",
-                Password = "password123",
-                PhoneNumber = "1234567890",
-                Subject = "Mathematics",
-                Class = "10-A",
-                JoiningDate = DateTime.Now.AddYears(-5),
-                IsActive = true
-            };
-            DatabaseHelper.AddTeacher(teacher);
+            // Sample teacher data is now handled by database initialization
+            // No need to reinitialize on every app load
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
