@@ -9,7 +9,9 @@ namespace EduNex
 {
     public class DatabaseHelper
     {
-        private static string _connectionString = "Server=localhost;Database=EduNex;User Id=root;Password=;";
+        // Connection string for MySQL Server
+        // Replace 'YOUR_PASSWORD' with your actual MySQL root password
+        private static string _connectionString = "Server=localhost;Database=EduNex;User Id=root;Password=YOUR_PASSWORD;";
 
         public static void SetConnectionString(string connString)
         {
